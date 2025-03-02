@@ -4,3 +4,5 @@ dependencies:
   - numpy
   - pandas
   - tensorflow=1.14.0
+  - ipykernel
+  - requests
