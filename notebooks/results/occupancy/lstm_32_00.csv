@@ -1,0 +1,2 @@
+best epoch, train loss, train accuracy, valid loss, valid accuracy, test loss, test accuracy
+192, 0.01, 99.78, 0.01, 99.85, 0.29, 95.19
