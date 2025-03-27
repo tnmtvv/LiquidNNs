@@ -15,7 +15,7 @@ All datasets are available in the ```notebooks/data``` folder.
 
 ## Training and evaluating the models 
 
-For reproducing the experiments from the original articles, please use the ```notebooks/old_repo_reproduction```
+For reproducing the experiments from the original articles, please use the ```notebooks/old_repo_reproduction``` folder where correspoding file for conda environment is located.
 
 ```
 conda env create -f environment.yml
@@ -32,9 +32,6 @@ The corresponding plots can be found in the ```results```
 ## Reproducibility
 
 Original article experiments can be reproduced locally. Experiments for Gesture, Occupancy, and Ozone were executed in Google Colab, while Traffic and Power were run on an A40 remote server.
-
----
-Answer from Perplexity: pplx.ai/share
 
 ## Papers
 | Models | References |
