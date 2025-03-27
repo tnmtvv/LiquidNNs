@@ -8,26 +8,33 @@ This repository allows you to train Liquid Neural Networks on different datasets
 - Traffic volume prediction
 - Ozone level forecasting
 - Power consumption
-## Requisites
-
-All models were implemented and tested in Google Colab.
-All the following steps assume that they are executed under these conditions. You can also use `requirements.txt`
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Datasets
-All datasets are available in the ```notebooks/data``` folder.
+All datasets are available in the ```notebooks/data``` folder. 
+
 
 ## Training and evaluating the models 
-All notebooks are located in the ```notebooks``` folder.
 
-Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every ``log`` steps.
-All results are stored in the ```notebooks/new_repo_reproduction``` and ```notebooks/old_repo_reproduction``` folder by appending the result to CSV and pdf files.
+For reproducing the experiments from the original articles, please use the ```notebooks/old_repo_reproduction```
+
+```
+conda env create -f environment.yml
+```
+
+All notebooks are located in the ```notebooks```
+For training Neural Circuit Policies, you can go to ```notebooks/new_repo_reproduction```
+
+Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every ```log```
+All results are stored in the ```notebooks/new_repo_reproduction``````notebooks/old_repo_reproduction``` as csv files.
+
+The corresponding plots can be found in the ```results```
 
 ## Reproducibility
-All notebooks of the ```notebooks/new_repo_reproduction``` were created in the colab environment to be standalone. In order to reproduce the results you shall run all cells in Colab. 
+
+Original article experiments can be reproduced locally. Experiments for Gesture, Occupancy, and Ozone were executed in Google Colab, while Traffic and Power were run on an A40 remote server.
+
+---
+Answer from Perplexity: pplx.ai/share
 
 ## Papers
 | Models | References |

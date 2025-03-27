@@ -1,0 +1,36 @@
+name: data_science_env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.12.9
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - seaborn
+  - plotly
+  - ipykernel
+  - ipython
+  - jupyter_client
+  - jupyter_core
+  - tqdm
+  - requests
+  - urllib3
+  - pytorch
+  - torchvision
+  - pytorch-lightning
+  - torchmetrics
+  - pyyaml
+  - joblib
+  - networkx
+  - pillow
+  - contourpy
+  - kiwisolver
+  - fonttools
+  - sympy
+  - mpmath
+  - pip:
+      - ncps
