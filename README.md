@@ -26,6 +26,9 @@ All notebooks are located in the ```notebooks``` folder.
 Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every ``log`` steps.
 All results are stored in the ```notebooks/new_repo_reproduction``` and ```notebooks/old_repo_reproduction``` folder by appending the result to CSV and pdf files.
 
+## Reproducibility
+All notebooks of the ```notebooks/new_repo_reproduction``` were created in the colab environment to be standalone. In order to reproduce the results you shall run all cells in Colab. 
+
 ## Papers
 | Models | References |
 | ----- | ----- |
