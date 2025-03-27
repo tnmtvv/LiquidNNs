@@ -24,7 +24,8 @@ All datasets are available in the ```notebooks/data``` folder.
 All notebooks are located in the ```notebooks``` folder.
 
 Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every ``log`` steps.
-All results are stored in the ```notebooks/logs``` folder by appending the result to CSV and pdf files.
+All results are stored in the ```notebooks/new_repo_reproduction``` and ```notebooks/old_repo_reproduction``` folder by appending the result to CSV and pdf files.
+
 ## Papers
 | Models | References |
 | ----- | ----- |
