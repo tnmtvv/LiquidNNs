@@ -25,7 +25,7 @@ All notebooks are located in the ```notebooks```
 For training Neural Circuit Policies, you can go to ```notebooks/new_repo_reproduction```
 
 Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every ```log```
-All results are stored in the ```notebooks/new_repo_reproduction``````notebooks/old_repo_reproduction``` as csv files.
+All results are stored in the ```notebooks/new_repo_reproduction``` ```notebooks/old_repo_reproduction``` as csv files.
 
 The corresponding plots can be found in the ```results```
 
