@@ -29,6 +29,20 @@ All results are stored in the ```notebooks/new_repo_reproduction``` ```notebooks
 
 The corresponding plots can be found in the ```results```
 
+## Results overview
+
+Here are the validation metrics vs epochs with new implementation's LTC and CfC models applied on the old datasets with the same preprocessing.
+
+
+<p align="center">
+    <img src="notebooks\new_repo_reproduction\gesture\Gesture_accuracy.jpg" width="300">
+    <img src="notebooks\new_repo_reproduction\ozone\Ozone_f1.jpg" width="300">
+    <br>
+    <img src="notebooks\new_repo_reproduction\power\Power_MSE_log.jpg" width="300">
+    <img src="notebooks\new_repo_reproduction\traffic\Traffic_MSE.jpg" width="300">
+</p>
+
+
 ## Reproducibility
 
 Original article experiments can be reproduced locally. Experiments for Gesture, Occupancy, and Ozone were executed in Google Colab, while Traffic and Power were run on an A40 remote server.
