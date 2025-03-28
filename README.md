@@ -2,6 +2,8 @@
  
 This is the official repository for LiquidNNs project for Skoltech ML 2025 course. Team 3 members: Anuar Daurenov, Dmitry Gribanov, Tatyana Matveeva, Maksim Makarov, Tatiana Kobernik
 
+This repository explores Liquid Neural Networks (LNNs)—a novel class of dynamic neural architectures designed for real-time adaptability in sequential data tasks. Focused on Liquid Time-Constant Networks (LTCs), Closed-form Continuous-time Networks (CfCs), and Neural Circuit Policies (NCPs), the project highlights their advantages over traditional models like LSTMs and Transformers in efficiency, interpretability, and adaptability.
+
 This repository allows you to train Liquid Neural Networks on different datasets:
 - Gestures
 - Occupancy
