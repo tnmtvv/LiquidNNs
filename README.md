@@ -2,32 +2,52 @@
  
 This is the official repository for LiquidNNs project for Skoltech ML 2025 course. Team 3 members: Anuar Daurenov, Dmitry Gribanov, Tatyana Matveeva, Maksim Makarov, Tatiana Kobernik
 
+This repository explores Liquid Neural Networks (LNNs)—a novel class of dynamic neural architectures designed for real-time adaptability in sequential data tasks. Focused on Liquid Time-Constant Networks (LTCs), Closed-form Continuous-time Networks (CfCs), and Neural Circuit Policies (NCPs), the project highlights their advantages over traditional models like LSTMs and Transformers in efficiency, interpretability, and adaptability.
+
 This repository allows you to train Liquid Neural Networks on different datasets:
 - Gestures
 - Occupancy
 - Traffic volume prediction
 - Ozone level forecasting
 - Power consumption
-## Requisites
-
-All models were implemented and tested in Google Colab.
-All the following steps assume that they are executed under these conditions. You can also use `requirements.txt`
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Datasets
-All datasets are available in the ```notebooks/data``` folder.
+All datasets are available in the ```notebooks/data``` folder. 
+
 
 ## Training and evaluating the models 
-All notebooks are located in the ```notebooks``` folder.
 
-Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every ``log`` steps.
-All results are stored in the ```notebooks/new_repo_reproduction``` and ```notebooks/old_repo_reproduction``` folder by appending the result to CSV and pdf files.
+For reproducing the experiments from the original articles, please use the ```notebooks/old_repo_reproduction``` folder where correspoding file for conda environment is located.
+
+```
+conda env create -f environment.yml
+```
+
+All notebooks are located in the ```notebooks```
+For training Neural Circuit Policies, you can go to ```notebooks/new_repo_reproduction```
+
+Each notebook trains the specified model for the given number of epochs and evaluates the validation performance after every 50 epochs creating corresponding ```log``` file.
+All results are stored in the ```notebooks/new_repo_reproduction``` ```notebooks/old_repo_reproduction``` as csv files.
+
+The corresponding plots can be found in the ```results```
+
+## Results overview
+
+Here are the validation metrics vs epochs with new implementation's LTC and CfC models applied on the old datasets with the same preprocessing.
+
+
+<p align="center">
+    <img src="notebooks\new_repo_reproduction\gesture\Gesture_accuracy.jpg" width="300">
+    <img src="notebooks\new_repo_reproduction\ozone\Ozone_f1.jpg" width="300">
+    <br>
+    <img src="notebooks\new_repo_reproduction\power\Power_MSE_log.jpg" width="300">
+    <img src="notebooks\new_repo_reproduction\traffic\Traffic_MSE.jpg" width="300">
+</p>
+
 
 ## Reproducibility
-All notebooks of the ```notebooks/new_repo_reproduction``` were created in the colab environment to be standalone. In order to reproduce the results you shall run all cells in Colab. 
+
+Original article experiments can be reproduced locally. Experiments for Gesture, Occupancy, and Ozone were executed in Google Colab, while Traffic and Power were run on an A40 remote server.
 
 ## Papers
 | Models | References |
